@@ -1,0 +1,29 @@
+{
+  "name": "cypress-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mochawesome-merge": "npx mochawesome-merge cypress/results/mochawesome/*.json > mochawesome.json && npx marge mochawesome.json",
+    "delete-result": "rm -rf cypress/results/* || true ",
+    "delete-mochawesome-report": "rm -rf mochawesome-report/* || true",
+    "cypress-regression": "npm run delete-result && npm run delete-mochawesome-report && npx cypress run && mochawesome-merge",
+    "trigger-headed": "npx cypress run --headed chrome"
+  },
+  "keywords": [],
+  "author": "Carlos Siverio",
+  "license": "ISC",
+  "devDependencies": {
+    "@cypress/xpath": "^2.0.3",
+    "cypress": "^12.9.0",
+    "cypress-multi-reporters": "^1.6.3",
+    "mocha-junit-reporter": "^2.2.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
+  },
+  "dependencies": {
+    "cypress-real-events": "^1.7.6"
+  }
+}
