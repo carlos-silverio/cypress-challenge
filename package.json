@@ -9,7 +9,7 @@
     "delete-result": "rm -rf cypress/results/* || true ",
     "delete-mochawesome-report": "rm -rf mochawesome-report/* || true",
     "cypress-regression": "npm run delete-result && npm run delete-mochawesome-report && npx cypress run && mochawesome-merge",
-    "trigger-headed": "npx cypress run --browser chrome"
+    "trigger-headed": "npx cypress run --headed --browser chrome"
   },
   "keywords": [],
   "author": "Carlos Siverio",
