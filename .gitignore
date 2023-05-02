@@ -5,3 +5,4 @@ screenshots
 results/
 videos
 package-lock.json
+cypress/e2e/json-challenge.cy.js
