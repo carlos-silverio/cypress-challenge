@@ -22,6 +22,6 @@ describe('Smoke test plan to check on the urls are available', () => {
         input.url() // Smoke test to check if the URL are working before testing 
     });
     it('Check on login url', () => {
-        login.url() // Smoke test to check if the URL are working before testing :)
+        login.url() // Smoke test to check if the URL are working before testing
     });
 });
