@@ -4,4 +4,9 @@ mochawesome-report
 screenshots
 results/
 videos
+<<<<<<< HEAD
 package-lock.json
+=======
+package-lock.json
+cypress/e2e/json-challenge.cy.js
+>>>>>>> fix
