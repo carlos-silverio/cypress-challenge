@@ -16,7 +16,7 @@ describe('Smoke test plan to check on the urls are available', () => {
         select.url() // Smoke test to check if the URL are working before testing
     });
     it('Check on hover url', () => {
-        hover.url() // Smoke test to check if the URL are working before testing /
+        hover.url() // Smoke test to check if the URL are working before testing
     });
     it('Check on input url', () => {
         input.url() // Smoke test to check if the URL are working before testing 
